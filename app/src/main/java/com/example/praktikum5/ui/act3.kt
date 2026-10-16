@@ -30,3 +30,15 @@ import androidx.compose.ui.unit.dp
 import com.example.praktikum5.R
 
 @Composable
+fun FormDataDiri(modifier: Modifier = Modifier){
+    // Variabel untuk mengingat nilai masukan dari keyboard
+    var textNama by remember { mutableStateOf("") }
+    var textAlamat by remember { mutableStateOf("") }
+    var textJK by remember { mutableStateOf("") }
+    val gender: List<String> = listOf("Laki-Laki", "Perempuan")
+
+    // Variabel untuk menyimpan data yang diperoleh dari komponen UI
+    var nama by remember { mutableStateOf("") }
+    var alamat by remember { mutableStateOf("") }
+    var jenis by remember { mutableStateOf("") }
+
